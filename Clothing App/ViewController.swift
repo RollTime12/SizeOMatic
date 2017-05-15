@@ -25,6 +25,11 @@ class ViewController: UIViewController {
 //        
 //    }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    
 }
 extension ViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -40,4 +45,9 @@ extension ViewController: UIPickerViewDelegate {
         return clothingType[row]
     }
 }
-
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+   return true
+    }
+}
