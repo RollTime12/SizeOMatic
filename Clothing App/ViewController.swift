@@ -40,9 +40,9 @@ class ViewController: UIViewController {
         pantsSizes.append(ClothingSize(name:"large", chestSize:nil,waistSize:37))
         }
     func createShirtSizes(){
-        shirtsSizes.append(ClothingSize(name:"small", chestSize:nil,waistSize:29))
-        shirtsSizes.append(ClothingSize(name:"medium", chestSize:nil,waistSize:33))
-        shirtsSizes.append(ClothingSize(name:"large", chestSize:nil,waistSize:37))
+        shirtsSizes.append(ClothingSize(name:"small", chestSize:37.75,waistSize:30))
+        shirtsSizes.append(ClothingSize(name:"medium", chestSize:39.75,waistSize:32))
+        shirtsSizes.append(ClothingSize(name:"large", chestSize:41.75,waistSize:34))
     }
 
 

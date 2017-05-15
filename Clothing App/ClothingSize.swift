@@ -10,10 +10,10 @@ import Foundation
 
 class ClothingSize {
     var name: String
-    var chestSize: Int?
-    var waistSize: Int
+    var chestSize: Float?
+    var waistSize: Float
     
-    init(name:String, chestSize: Int?, waistSize: Int){
+    init(name:String, chestSize: Float?, waistSize: Float){
     self.name = name
     self.chestSize = chestSize
     self.waistSize = waistSize
