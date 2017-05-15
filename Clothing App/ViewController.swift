@@ -23,15 +23,30 @@ class ViewController: UIViewController {
         let index = pickerView.selectedRow(inComponent:0)
     return clothingType[index]
     }
-//    func clothingSize(for clothingtype: String) -> Int {
-//        
-//    }
+    var pantsSizes: [ClothingSize] = []
+    var shirtsSizes: [ClothingSize] = []
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        createPantSizes()
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
     
-    
+    func createPantSizes(){
+        pantsSizes.append(ClothingSize(name:"small", chestSize:nil,waistSize:29))
+       pantsSizes.append(ClothingSize(name:"medium", chestSize:nil,waistSize:33))
+        pantsSizes.append(ClothingSize(name:"large", chestSize:nil,waistSize:37))
+        }
+    func createShirtSizes(){
+        shirtsSizes.append(ClothingSize(name:"small", chestSize:nil,waistSize:29))
+        shirtsSizes.append(ClothingSize(name:"medium", chestSize:nil,waistSize:33))
+        shirtsSizes.append(ClothingSize(name:"large", chestSize:nil,waistSize:37))
+    }
+
+
+
 }
 extension ViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
