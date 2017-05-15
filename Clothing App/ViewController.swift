@@ -12,12 +12,18 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var pickerView: UIPickerView!
     
+    @IBOutlet weak var chestTextField: UITextField!
+    
+    @IBOutlet weak var waistTextField: UITextField!
+    
     let clothingType = ["Shirts","Pants"]
     var selectedClothingType: String{
         let index = pickerView.selectedRow(inComponent:0)
     return clothingType[index]
-    
     }
+//    func clothingSize(for clothingtype: String) -> Int {
+//        
+//    }
     
 }
 extension ViewController: UIPickerViewDataSource {
