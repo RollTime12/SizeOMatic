@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var keywordTextField: UITextField!
+    
     @IBOutlet weak var pickerView: UIPickerView!
     
     @IBOutlet weak var chestTextField: UITextField!

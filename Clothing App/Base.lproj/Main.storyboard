@@ -31,7 +31,7 @@
                                 </connections>
                             </pickerView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="odh-Q0-Jem">
-                                <rect key="frame" x="28" y="120" width="319" height="137"/>
+                                <rect key="frame" x="28" y="120" width="319" height="211.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opz-Fp-pPV">
                                         <rect key="frame" x="0.0" y="0.0" width="319" height="20.5"/>
@@ -57,6 +57,18 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra Keywords" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RI0-ec-XaH">
+                                        <rect key="frame" x="0.0" y="149" width="319" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SwQ-7D-e95">
+                                        <rect key="frame" x="0.0" y="181.5" width="319" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -69,6 +81,7 @@
                     </view>
                     <connections>
                         <outlet property="chestTextField" destination="FbR-00-DN6" id="6gh-yF-ieQ"/>
+                        <outlet property="keywordTextField" destination="SwQ-7D-e95" id="n6w-Bu-GY6"/>
                         <outlet property="pickerView" destination="7p1-vR-7hy" id="MEx-t7-8pp"/>
                         <outlet property="waistTextField" destination="7M8-M4-16P" id="LAb-bE-MKf"/>
                     </connections>
