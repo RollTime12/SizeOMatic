@@ -12,6 +12,7 @@
 		83EE35E21ECA3E430001F4A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EE35E01ECA3E430001F4A6 /* Main.storyboard */; };
 		83EE35E41ECA3E430001F4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EE35E31ECA3E430001F4A6 /* Assets.xcassets */; };
 		83EE35E71ECA3E430001F4A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EE35E51ECA3E430001F4A6 /* LaunchScreen.storyboard */; };
+		83EE35EF1ECA537E0001F4A6 /* ClothingSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE35EE1ECA537E0001F4A6 /* ClothingSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		83EE35E31ECA3E430001F4A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83EE35E61ECA3E430001F4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83EE35E81ECA3E430001F4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83EE35EE1ECA537E0001F4A6 /* ClothingSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClothingSize.swift; path = "Clothing App/ClothingSize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		83EE35D01ECA3E430001F4A6 = {
 			isa = PBXGroup;
 			children = (
+				83EE35EE1ECA537E0001F4A6 /* ClothingSize.swift */,
 				83EE35DB1ECA3E430001F4A6 /* Clothing App */,
 				83EE35DA1ECA3E430001F4A6 /* Products */,
 			);
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EE35EF1ECA537E0001F4A6 /* ClothingSize.swift in Sources */,
 				83EE35DF1ECA3E430001F4A6 /* ViewController.swift in Sources */,
 				83EE35DD1ECA3E430001F4A6 /* AppDelegate.swift in Sources */,
 			);
