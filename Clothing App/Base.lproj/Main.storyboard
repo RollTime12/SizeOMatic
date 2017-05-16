@@ -113,7 +113,7 @@
         <!--Web View Controller-->
         <scene sceneID="QJR-md-l8H">
             <objects>
-                <viewController id="xOU-uj-FzD" customClass="WebViewController" customModule="Clothing_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewController" id="xOU-uj-FzD" customClass="WebViewController" customModule="Clothing_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="j68-rD-jgh"/>
                         <viewControllerLayoutGuide type="bottom" id="SLs-xi-4o5"/>

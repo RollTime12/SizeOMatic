@@ -9,13 +9,16 @@
 import Foundation
 
 class APIManager{
-    let baseURL = URL(string: "https://www.google.com/")!
+    let baseURL = URL(string: "https://www.google.com/search")!
 
     func urlRequest(with components: String...) -> URLRequest {
-        var url = baseURL
+        var url = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
+        var queryItems = [URLQueryItem]()
         for component in components {
-            url.appendPathComponent(component)
-        }
-        return URLRequest(url: url)
+            queryItems.append(URLQueryItem(name: "q", value: component))
+            }
+        queryItems.append(URLQueryItem(name: "tbm", value: "shop"))
+        url?.queryItems = queryItems
+        return URLRequest(url: url!.url!)
     }
 }

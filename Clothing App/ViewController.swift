@@ -17,12 +17,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var sizeLabel: UILabel!
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
         calculateClothingSize()
-     
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let webViewController = storyboard.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
+        webViewController.urlRequest = apiManager.urlRequest(with: selectedClothingType)
+        present(webViewController, animated: true, completion: nil)
     }
     let clothingType = ["Shirts","Pants"]
     var selectedClothingType: String {
         let index = pickerView.selectedRow(inComponent:0)
-        
         return clothingType[index]
     }
     var pantsSizes: [ClothingSize] = []

@@ -11,11 +11,14 @@ import UIKit
 class WebViewController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
-    
+    var urlRequest: URLRequest?
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        webView.loadRequest(urlRequest!)
 
-        // Do any additional setup after loading the view.
+
     }
 
 }
