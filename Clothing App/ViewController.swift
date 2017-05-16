@@ -16,10 +16,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var waistTextField: UITextField!
     @IBOutlet weak var sizeLabel: UILabel!
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
-        calculateClothingSize()
+        let size = calculateClothingSize()
+        sizeLabel.text = size
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let webViewController = storyboard.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
-        webViewController.urlRequest = apiManager.urlRequest(with: selectedClothingType)
+        webViewController.urlRequest = apiManager.urlRequest(with: selectedClothingType, keywordTextField.text ?? "", size ?? "")
         present(webViewController, animated: true, completion: nil)
     }
     let clothingType = ["Shirts","Pants"]
@@ -70,9 +71,10 @@ class ViewController: UIViewController {
         }
         
         if selectedClothingType == "Shirts" {
-            sizeLabel.text = shirtsSizes.filter({$0.waistSize >= waistSize}).filter({$0.chestSize ?? 0 >= chestSize}).first?.name
+            return shirtsSizes.filter({$0.waistSize >= waistSize}).filter({$0.chestSize ?? 0 >= chestSize}).first?.name
+
         } else if selectedClothingType == "Pants" {
-            sizeLabel.text = pantsSizes.filter({$0.waistSize >= waistSize}).first?.name
+            return pantsSizes.filter({$0.waistSize >= waistSize}).first?.name
         }
         
         return nil
