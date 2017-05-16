@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var sizeLabel: UILabel!
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
         calculateClothingSize()
-        apiManager.getShirts()
+     
     }
     let clothingType = ["Shirts","Pants"]
     var selectedClothingType: String {
