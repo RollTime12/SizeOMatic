@@ -108,7 +108,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-687.20000000000005" y="11.244377811094454"/>
+            <point key="canvasLocation" x="-1228" y="9"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="QJR-md-l8H">
+            <objects>
+                <viewController id="xOU-uj-FzD" customClass="WebViewController" customModule="Clothing_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j68-rD-jgh"/>
+                        <viewControllerLayoutGuide type="bottom" id="SLs-xi-4o5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rBW-p5-wDc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U7B-M3-HCg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U7B-M3-HCg" firstAttribute="top" secondItem="rBW-p5-wDc" secondAttribute="top" id="PRv-Zi-uvM"/>
+                            <constraint firstItem="SLs-xi-4o5" firstAttribute="top" secondItem="U7B-M3-HCg" secondAttribute="bottom" id="Pgj-4C-njG"/>
+                            <constraint firstAttribute="trailing" secondItem="U7B-M3-HCg" secondAttribute="trailing" id="kYM-du-Blu"/>
+                            <constraint firstItem="U7B-M3-HCg" firstAttribute="leading" secondItem="rBW-p5-wDc" secondAttribute="leading" id="sFn-dX-15Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="U7B-M3-HCg" id="rAe-Fg-eI4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V5y-sr-sl0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-553" y="9"/>
         </scene>
     </scenes>
 </document>

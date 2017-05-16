@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var sizeLabel: UILabel!
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
         calculateClothingSize()
+        apiManager.getShirts()
     }
     let clothingType = ["Shirts","Pants"]
     var selectedClothingType: String {
@@ -26,6 +27,7 @@ class ViewController: UIViewController {
     }
     var pantsSizes: [ClothingSize] = []
     var shirtsSizes: [ClothingSize] = []
+    let apiManager = APIManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
