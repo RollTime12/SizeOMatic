@@ -31,7 +31,7 @@
                                 </connections>
                             </pickerView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="odh-Q0-Jem">
-                                <rect key="frame" x="28" y="120" width="319" height="211.5"/>
+                                <rect key="frame" x="28" y="120" width="319" height="318.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opz-Fp-pPV">
                                         <rect key="frame" x="0.0" y="0.0" width="319" height="20.5"/>
@@ -69,6 +69,25 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnO-fb-Xrx">
+                                        <rect key="frame" x="0.0" y="223.5" width="319" height="30"/>
+                                        <state key="normal" title="Calculate"/>
+                                        <connections>
+                                            <action selector="calculateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="avF-TS-ivd"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKl-7O-YWa">
+                                        <rect key="frame" x="0.0" y="265.5" width="319" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qk3-k9-9bf">
+                                        <rect key="frame" x="0.0" y="298" width="319" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -83,12 +102,13 @@
                         <outlet property="chestTextField" destination="FbR-00-DN6" id="6gh-yF-ieQ"/>
                         <outlet property="keywordTextField" destination="SwQ-7D-e95" id="n6w-Bu-GY6"/>
                         <outlet property="pickerView" destination="7p1-vR-7hy" id="MEx-t7-8pp"/>
+                        <outlet property="sizeLabel" destination="Qk3-k9-9bf" id="4Wu-QP-4bL"/>
                         <outlet property="waistTextField" destination="7M8-M4-16P" id="LAb-bE-MKf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+            <point key="canvasLocation" x="-687.20000000000005" y="11.244377811094454"/>
         </scene>
     </scenes>
 </document>

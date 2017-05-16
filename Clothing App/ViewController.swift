@@ -14,7 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var chestTextField: UITextField!
     @IBOutlet weak var waistTextField: UITextField!
-    
+    @IBOutlet weak var sizeLabel: UILabel!
+    @IBAction func calculateButtonTapped(_ sender: UIButton) {
+        calculateClothingSize()
+    }
     let clothingType = ["Shirts","Pants"]
     var selectedClothingType: String {
         let index = pickerView.selectedRow(inComponent:0)
@@ -35,30 +38,42 @@ class ViewController: UIViewController {
     }
     
     func createPantSizes() {
-        pantsSizes.append(ClothingSize(name:"extra small", chestSize:nil,waistSize:27.5))
-        pantsSizes.append(ClothingSize(name:"small", chestSize:nil,waistSize:29))
-        pantsSizes.append(ClothingSize(name:"medium", chestSize:nil,waistSize:33))
-        pantsSizes.append(ClothingSize(name:"large", chestSize:nil,waistSize:37))
-        pantsSizes.append(ClothingSize(name:"extra large", chestSize:nil,waistSize:41))
-        pantsSizes.append(ClothingSize(name:"double extra large", chestSize:nil,waistSize:45))
-        pantsSizes.append(ClothingSize(name:"triple extra large", chestSize:nil,waistSize:49))
-        pantsSizes.append(ClothingSize(name:"quadruple extra large", chestSize:nil,waistSize:53))
-        pantsSizes.append(ClothingSize(name:"quintuple extra large", chestSize:nil,waistSize:57))
-        pantsSizes.append(ClothingSize(name:"sextuple extra large", chestSize:nil,waistSize:61))
+        pantsSizes.append(ClothingSize(name:"Extra Small", chestSize:nil,waistSize:27.5))
+        pantsSizes.append(ClothingSize(name:"Small", chestSize:nil,waistSize:29))
+        pantsSizes.append(ClothingSize(name:"Medium", chestSize:nil,waistSize:33))
+        pantsSizes.append(ClothingSize(name:"Large", chestSize:nil,waistSize:37))
+        pantsSizes.append(ClothingSize(name:"Extra Large", chestSize:nil,waistSize:41))
+        pantsSizes.append(ClothingSize(name:"Double Extra Large", chestSize:nil,waistSize:45))
+        pantsSizes.append(ClothingSize(name:"Triple Extra Large", chestSize:nil,waistSize:49))
+        pantsSizes.append(ClothingSize(name:"Quadruple Extra Large", chestSize:nil,waistSize:53))
+        pantsSizes.append(ClothingSize(name:"Quintuple Extra Large", chestSize:nil,waistSize:57))
+        pantsSizes.append(ClothingSize(name:"Sextuple Extra Large", chestSize:nil,waistSize:61))
     }
     
     func createShirtSizes() {
-        shirtsSizes.append(ClothingSize(name:"extra small", chestSize:35.75,waistSize:28))
-        shirtsSizes.append(ClothingSize(name:"small", chestSize:37.75,waistSize:30))
-        shirtsSizes.append(ClothingSize(name:"medium", chestSize:39.75,waistSize:32))
-        shirtsSizes.append(ClothingSize(name:"large", chestSize:41.75,waistSize:34))
-        shirtsSizes.append(ClothingSize(name:"extra large", chestSize:44.75,waistSize:37))
-        shirtsSizes.append(ClothingSize(name:"double extra large", chestSize:46.75,waistSize:39))
+        shirtsSizes.append(ClothingSize(name:"Extra Small", chestSize:35.75,waistSize:28))
+        shirtsSizes.append(ClothingSize(name:"Small", chestSize:37.75,waistSize:30))
+        shirtsSizes.append(ClothingSize(name:"Medium", chestSize:39.75,waistSize:32))
+        shirtsSizes.append(ClothingSize(name:"Large", chestSize:41.75,waistSize:34))
+        shirtsSizes.append(ClothingSize(name:"Extra Large", chestSize:44.75,waistSize:37))
+        shirtsSizes.append(ClothingSize(name:"Double Extra Large", chestSize:46.75,waistSize:39))
     }
-
     
+    func calculateClothingSize() -> String? {
+        guard let waistSize = Double(waistTextField.text ?? ""), let chestSize = Double(chestTextField.text ?? "") else {
+            
+            return nil
+        }
+        
+        if selectedClothingType == "Shirts" {
+            sizeLabel.text = shirtsSizes.filter({$0.waistSize >= waistSize}).filter({$0.chestSize ?? 0 >= chestSize}).first?.name
+        } else if selectedClothingType == "Pants" {
+            sizeLabel.text = pantsSizes.filter({$0.waistSize >= waistSize}).first?.name
+        }
+        
+        return nil
+    }
 }
-
 extension ViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
