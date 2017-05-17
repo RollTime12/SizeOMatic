@@ -13,6 +13,10 @@ class WebViewController: UIViewController {
     @IBOutlet weak var webView: UIWebView!
     var urlRequest: URLRequest?
 
+    @IBAction func exitButtonPressed(_ sender: UIButton) {
+
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
