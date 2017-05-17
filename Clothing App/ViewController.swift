@@ -18,11 +18,16 @@ class ViewController: UIViewController {
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
         let size = calculateClothingSize()
         sizeLabel.text = size
+
+    }
+
+    @IBAction func seeInShoppingButtonTapped(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let webViewController = storyboard.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
-        webViewController.urlRequest = apiManager.urlRequest(with: selectedClothingType, keywordTextField.text ?? "", size ?? "")
+        webViewController.urlRequest = apiManager.urlRequest(with: selectedClothingType, keywordTextField.text ?? "", sizeLabel.text ?? "")
         present(webViewController, animated: true, completion: nil)
     }
+
     let clothingType = ["Shirts","Pants"]
     var selectedClothingType: String {
         let index = pickerView.selectedRow(inComponent:0)

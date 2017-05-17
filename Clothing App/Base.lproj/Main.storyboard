@@ -31,7 +31,7 @@
                                 </connections>
                             </pickerView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="odh-Q0-Jem">
-                                <rect key="frame" x="28" y="120" width="319" height="318.5"/>
+                                <rect key="frame" x="28" y="120" width="319" height="360.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opz-Fp-pPV">
                                         <rect key="frame" x="0.0" y="0.0" width="319" height="20.5"/>
@@ -88,6 +88,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5W-DP-RJa">
+                                        <rect key="frame" x="0.0" y="330.5" width="319" height="30"/>
+                                        <state key="normal" title="See in Google Shopping"/>
+                                        <connections>
+                                            <action selector="seeInShoppingButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T2L-Qn-ApC"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
