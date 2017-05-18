@@ -71,6 +71,19 @@ class ViewController: UIViewController {
             return nil
         }
 
+        if selectedClothingType == "Pants" && waistSize > 61 {
+            return "Input too large"
+        }
+
+        else if selectedClothingType == "Shirts" && waistSize > 39 {
+            return "Input too large"
+        }
+
+
+        guard chestSize <= 46.75 else{
+            return "Input too large"
+        }
+
         if selectedClothingType == "Shirts" {
             return shirtsSizes.filter({$0.waistSize >= waistSize}).filter({$0.chestSize ?? 0 >= chestSize}).first?.name
 
