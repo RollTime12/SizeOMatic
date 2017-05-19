@@ -8,10 +8,10 @@
 
 import Foundation
 
-class APIManager{
+public class APIManager{
     let baseURL = URL(string: "https://www.google.com/search")!
 
-    func urlRequest(with components: String...) -> URLRequest {
+    public func urlRequest(with components: String...) -> URLRequest {
         var url = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
         var queryItems = [URLQueryItem]()
         for component in components {
@@ -20,5 +20,8 @@ class APIManager{
         queryItems.append(URLQueryItem(name: "tbm", value: "shop"))
         url?.queryItems = queryItems
         return URLRequest(url: url!.url!)
+    }
+    public init(){
+
     }
 }

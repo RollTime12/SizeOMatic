@@ -31,7 +31,7 @@
                                 </connections>
                             </pickerView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="odh-Q0-Jem">
-                                <rect key="frame" x="28" y="164" width="319" height="3600340"/>
+                                <rect key="frame" x="28" y="114" width="319" height="1296000340"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opz-Fp-pPV">
                                         <rect key="frame" x="0.0" y="0.0" width="319" height="20.5"/>
@@ -83,13 +83,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qk3-k9-9bf">
-                                        <rect key="frame" x="0.0" y="298" width="319" height="3600000"/>
+                                        <rect key="frame" x="0.0" y="298" width="319" height="1296000000"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5W-DP-RJa">
-                                        <rect key="frame" x="0.0" y="3600310" width="319" height="30"/>
+                                        <rect key="frame" x="0.0" y="1296000310" width="319" height="30"/>
                                         <state key="normal" title="See in Google Shopping"/>
                                         <connections>
                                             <segue destination="xOU-uj-FzD" kind="show" id="R7t-jh-eHn"/>
@@ -101,11 +101,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="odh-Q0-Jem" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="jGY-8i-ETF"/>
-                            <constraint firstItem="odh-Q0-Jem" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="kl4-Zp-AcD"/>
+                            <constraint firstItem="odh-Q0-Jem" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="kl4-Zp-AcD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="odh-Q0-Jem" secondAttribute="trailing" constant="12" id="tTe-TM-EdP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Main" id="Qg5-qd-b2g"/>
+                    <navigationItem key="navigationItem" title="Main" id="KqW-hJ-ml9"/>
                     <connections>
                         <outlet property="chestTextField" destination="FbR-00-DN6" id="6gh-yF-ieQ"/>
                         <outlet property="keywordTextField" destination="SwQ-7D-e95" id="n6w-Bu-GY6"/>

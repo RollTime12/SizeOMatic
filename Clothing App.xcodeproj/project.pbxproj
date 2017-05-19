@@ -7,17 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		837097F51ECF6CBD006ABA14 /* SizeOMaticKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 837097F31ECF6CBD006ABA14 /* SizeOMaticKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8399678A1ECF713400289D71 /* API Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE35F01ECB5B6A0001F4A6 /* API Manager.swift */; };
+		8399678B1ECF713400289D71 /* ClothingSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE35EE1ECA537E0001F4A6 /* ClothingSize.swift */; };
+		8399678C1ECF713400289D71 /* SizeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097E81ECF4DC9006ABA14 /* SizeManager.swift */; };
+		8399678D1ECF713400289D71 /* ClothingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837097EA1ECF530C006ABA14 /* ClothingType.swift */; };
+		8399678E1ECF713D00289D71 /* SizeOMaticKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837097F11ECF6CBD006ABA14 /* SizeOMaticKit.framework */; };
+		8399678F1ECF713D00289D71 /* SizeOMaticKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 837097F11ECF6CBD006ABA14 /* SizeOMaticKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		83EE35DD1ECA3E430001F4A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE35DC1ECA3E430001F4A6 /* AppDelegate.swift */; };
 		83EE35DF1ECA3E430001F4A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE35DE1ECA3E430001F4A6 /* ViewController.swift */; };
 		83EE35E21ECA3E430001F4A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EE35E01ECA3E430001F4A6 /* Main.storyboard */; };
 		83EE35E41ECA3E430001F4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EE35E31ECA3E430001F4A6 /* Assets.xcassets */; };
 		83EE35E71ECA3E430001F4A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EE35E51ECA3E430001F4A6 /* LaunchScreen.storyboard */; };
-		83EE35EF1ECA537E0001F4A6 /* ClothingSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE35EE1ECA537E0001F4A6 /* ClothingSize.swift */; };
-		83EE35F11ECB5B6A0001F4A6 /* API Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE35F01ECB5B6A0001F4A6 /* API Manager.swift */; };
 		83EE35F31ECB66A70001F4A6 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE35F21ECB66A70001F4A6 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		839967901ECF713D00289D71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83EE35D11ECA3E430001F4A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 837097F01ECF6CBD006ABA14;
+			remoteInfo = SizeOMaticKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		839967921ECF713D00289D71 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8399678F1ECF713D00289D71 /* SizeOMaticKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		837097E81ECF4DC9006ABA14 /* SizeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SizeManager.swift; path = "../Clothing App/SizeManager.swift"; sourceTree = "<group>"; };
+		837097EA1ECF530C006ABA14 /* ClothingType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClothingType.swift; path = "../Clothing App/ClothingType.swift"; sourceTree = "<group>"; };
+		837097F11ECF6CBD006ABA14 /* SizeOMaticKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SizeOMaticKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		837097F31ECF6CBD006ABA14 /* SizeOMaticKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SizeOMaticKit.h; sourceTree = "<group>"; };
+		837097F41ECF6CBD006ABA14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83EE35D91ECA3E430001F4A6 /* Clothing App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clothing App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EE35DC1ECA3E430001F4A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83EE35DE1ECA3E430001F4A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,29 +59,48 @@
 		83EE35E31ECA3E430001F4A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83EE35E61ECA3E430001F4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83EE35E81ECA3E430001F4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83EE35EE1ECA537E0001F4A6 /* ClothingSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClothingSize.swift; path = "Clothing App/ClothingSize.swift"; sourceTree = "<group>"; };
-		83EE35F01ECB5B6A0001F4A6 /* API Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "API Manager.swift"; sourceTree = "<group>"; };
-		83EE35F21ECB66A70001F4A6 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = "Clothing App/WebViewController.swift"; sourceTree = "<group>"; };
+		83EE35EE1ECA537E0001F4A6 /* ClothingSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClothingSize.swift; path = "../Clothing App/ClothingSize.swift"; sourceTree = "<group>"; };
+		83EE35F01ECB5B6A0001F4A6 /* API Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "API Manager.swift"; path = "../API Manager.swift"; sourceTree = "<group>"; };
+		83EE35F21ECB66A70001F4A6 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		83EE35D61ECA3E430001F4A6 /* Frameworks */ = {
+		837097ED1ECF6CBD006ABA14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83EE35D61ECA3E430001F4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8399678E1ECF713D00289D71 /* SizeOMaticKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		837097F21ECF6CBD006ABA14 /* SizeOMaticKit */ = {
+			isa = PBXGroup;
+			children = (
+				83EE35F01ECB5B6A0001F4A6 /* API Manager.swift */,
+				83EE35EE1ECA537E0001F4A6 /* ClothingSize.swift */,
+				837097E81ECF4DC9006ABA14 /* SizeManager.swift */,
+				837097EA1ECF530C006ABA14 /* ClothingType.swift */,
+				837097F31ECF6CBD006ABA14 /* SizeOMaticKit.h */,
+				837097F41ECF6CBD006ABA14 /* Info.plist */,
+			);
+			path = SizeOMaticKit;
+			sourceTree = "<group>";
+		};
 		83EE35D01ECA3E430001F4A6 = {
 			isa = PBXGroup;
 			children = (
-				83EE35F21ECB66A70001F4A6 /* WebViewController.swift */,
-				83EE35F01ECB5B6A0001F4A6 /* API Manager.swift */,
-				83EE35EE1ECA537E0001F4A6 /* ClothingSize.swift */,
 				83EE35DB1ECA3E430001F4A6 /* Clothing App */,
+				837097F21ECF6CBD006ABA14 /* SizeOMaticKit */,
 				83EE35DA1ECA3E430001F4A6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				83EE35D91ECA3E430001F4A6 /* Clothing App.app */,
+				837097F11ECF6CBD006ABA14 /* SizeOMaticKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +117,7 @@
 		83EE35DB1ECA3E430001F4A6 /* Clothing App */ = {
 			isa = PBXGroup;
 			children = (
+				83EE35F21ECB66A70001F4A6 /* WebViewController.swift */,
 				83EE35DC1ECA3E430001F4A6 /* AppDelegate.swift */,
 				83EE35DE1ECA3E430001F4A6 /* ViewController.swift */,
 				83EE35E01ECA3E430001F4A6 /* Main.storyboard */,
@@ -75,7 +130,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		837097EE1ECF6CBD006ABA14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837097F51ECF6CBD006ABA14 /* SizeOMaticKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		837097F01ECF6CBD006ABA14 /* SizeOMaticKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 837097FA1ECF6CBD006ABA14 /* Build configuration list for PBXNativeTarget "SizeOMaticKit" */;
+			buildPhases = (
+				837097EC1ECF6CBD006ABA14 /* Sources */,
+				837097ED1ECF6CBD006ABA14 /* Frameworks */,
+				837097EE1ECF6CBD006ABA14 /* Headers */,
+				837097EF1ECF6CBD006ABA14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SizeOMaticKit;
+			productName = SizeOMaticKit;
+			productReference = 837097F11ECF6CBD006ABA14 /* SizeOMaticKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		83EE35D81ECA3E430001F4A6 /* Clothing App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83EE35EB1ECA3E430001F4A6 /* Build configuration list for PBXNativeTarget "Clothing App" */;
@@ -83,10 +167,12 @@
 				83EE35D51ECA3E430001F4A6 /* Sources */,
 				83EE35D61ECA3E430001F4A6 /* Frameworks */,
 				83EE35D71ECA3E430001F4A6 /* Resources */,
+				839967921ECF713D00289D71 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				839967911ECF713D00289D71 /* PBXTargetDependency */,
 			);
 			name = "Clothing App";
 			productName = "Clothing App";
@@ -103,6 +189,10 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Christopher Knauth";
 				TargetAttributes = {
+					837097F01ECF6CBD006ABA14 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
 					83EE35D81ECA3E430001F4A6 = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
@@ -123,11 +213,19 @@
 			projectRoot = "";
 			targets = (
 				83EE35D81ECA3E430001F4A6 /* Clothing App */,
+				837097F01ECF6CBD006ABA14 /* SizeOMaticKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		837097EF1ECF6CBD006ABA14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		83EE35D71ECA3E430001F4A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,12 +239,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		837097EC1ECF6CBD006ABA14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8399678B1ECF713400289D71 /* ClothingSize.swift in Sources */,
+				8399678C1ECF713400289D71 /* SizeManager.swift in Sources */,
+				8399678A1ECF713400289D71 /* API Manager.swift in Sources */,
+				8399678D1ECF713400289D71 /* ClothingType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		83EE35D51ECA3E430001F4A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83EE35EF1ECA537E0001F4A6 /* ClothingSize.swift in Sources */,
-				83EE35F11ECB5B6A0001F4A6 /* API Manager.swift in Sources */,
 				83EE35DF1ECA3E430001F4A6 /* ViewController.swift in Sources */,
 				83EE35F31ECB66A70001F4A6 /* WebViewController.swift in Sources */,
 				83EE35DD1ECA3E430001F4A6 /* AppDelegate.swift in Sources */,
@@ -154,6 +261,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		839967911ECF713D00289D71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 837097F01ECF6CBD006ABA14 /* SizeOMaticKit */;
+			targetProxy = 839967901ECF713D00289D71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		83EE35E01ECA3E430001F4A6 /* Main.storyboard */ = {
@@ -175,6 +290,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		837097FB1ECF6CBD006ABA14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SizeOMaticKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RollTime.SizeOMaticKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		837097FC1ECF6CBD006ABA14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SizeOMaticKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RollTime.SizeOMaticKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		83EE35E91ECA3E430001F4A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -216,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -261,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -273,17 +432,12 @@
 		83EE35EC1ECA3E430001F4A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Clothing App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				"OTHER_LDFLAGS[arch=*]" = (
-					"-ObjC",
-					"-force_load",
-					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
-					"-framework",
-					CFNetwork,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.whocares.Clothing-App";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RollTime.SizeOMatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -292,10 +446,12 @@
 		83EE35ED1ECA3E430001F4A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Clothing App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.whocares.Clothing-App";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RollTime.SizeOMatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -304,6 +460,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		837097FA1ECF6CBD006ABA14 /* Build configuration list for PBXNativeTarget "SizeOMaticKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				837097FB1ECF6CBD006ABA14 /* Debug */,
+				837097FC1ECF6CBD006ABA14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		83EE35D41ECA3E430001F4A6 /* Build configuration list for PBXProject "Clothing App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
