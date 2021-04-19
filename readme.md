@@ -1,1 +1,2 @@
-Please don't use this, it has security issues and I built it when I was 12.
+$$ SizeOMatic: Simple iOS app which calculates clothing sizes based on your measurements
+Warning: Has not been updated in several years, known security vulnerabilities
